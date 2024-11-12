@@ -1,0 +1,31 @@
+@import '../../../../assets/css/auth-forms.css';
+.login {
+  filter: brightness(1);
+  z-index: 1;
+  width: 90%; /* Para mantener un ancho proporcional en pantallas pequeñas */
+  max-width: 600px; /* Limita el ancho máximo */
+  min-height: 800px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 100px 30px 50px;
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+
+/* Pantallas medianas */
+@media (max-width: 768px) {
+  .login {
+    min-height: 600px;
+    padding: 80px 20px 40px;
+    width: 95%; /* Aumenta el ancho en pantallas más pequeñas */
+  }
+}
+
+/* Pantallas pequeñas, como móviles */
+@media (max-width: 480px) {
+  .login {
+    min-height: 500px;
+    padding: 60px 15px 30px;
+    width: 100%; /* Usa el ancho completo en móviles */
+  }
+}

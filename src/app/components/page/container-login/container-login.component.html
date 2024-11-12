@@ -1,0 +1,17 @@
+<div class="login-container">
+  <div class="container-login">
+    <!-- Componente de Login -->
+    <app-login
+      *ngIf="currentView === 'login'"
+      [@slideAnimation]="currentView"
+      (switchToRegister)="toggleView()">
+    </app-login>
+    
+    <!-- Componente de Register -->
+    <app-register
+      *ngIf="currentView === 'register'"
+      [@fadeAnimation]="currentView"
+      (switchToLogin)="toggleView()">
+    </app-register>
+  </div>
+</div>

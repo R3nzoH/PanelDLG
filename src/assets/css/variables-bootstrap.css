@@ -1,0 +1,21 @@
+@import './variables.css';
+
+:root {
+  --primary: var(--main-color);
+  --blue: var(--main-color);
+  --gray-dark: var(--dark-color);
+}
+
+.bg-dark {
+  background-color: var(--dark-color) !important;
+  color: #FFFFFF;
+}
+
+.btn {
+  border-radius: 7rem;
+}
+
+.btn-primary {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}

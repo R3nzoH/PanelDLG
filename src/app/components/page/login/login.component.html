@@ -1,0 +1,25 @@
+<div class="login">
+  
+  <h2>Panel DLG</h2>
+  <label for="username">Usuario</label>
+  <input
+    id="username"
+    [(ngModel)]="username"
+    placeholder="Ingrese su número de acceso"
+    type="text"
+    class="form-control"
+  />
+  <br />
+  <label for="password">Contraseña</label>
+  <input
+    id="password"
+    [(ngModel)]="password"
+    placeholder="Ingrese su contraseña"
+    type="password"
+    class="form-control"
+  />
+  <p>Si tiene problemas para iniciar sesión, contacte a su administrador</p>
+  <br />
+  <button (click)="login()" class="btn btn-primary">Ingresar</button>
+  <button (click)="goToRegister()" class="btn-secondary">Registrarse</button>
+</div>

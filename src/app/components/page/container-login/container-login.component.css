@@ -1,0 +1,116 @@
+/* Contenedor principal centrado */
+.login-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Fondo con imagen y superposición */
+.login-container::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('../../../../assets/images/bg-login.jpeg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5) saturate(1.2);
+  pointer-events: none;
+  z-index: -1;
+  transition: filter 0.3s ease-in-out;
+}
+
+/* Contenedor de los formularios */
+.container-login {
+  display: flex;
+  width: auto;
+  max-width: 600px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+/* Estilos comunes para los formularios */
+.form-container {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Título */
+h2 {
+  font-weight: bold;
+  color: var(--dark-color);
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Etiquetas y campos de entrada */
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.form-control,
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* Estilos comunes para botones */
+.button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Botón primario */
+.btn-primary {
+  color: #fff;
+  background-color: var(--main-color);
+  border: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-color);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Botón secundario */
+.btn-secondary {
+  color: var(--main-color);
+  background-color: #fff;
+  border: 2px solid var(--main-color);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: var(--main-color);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
